@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo de Inmuebles</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo">🏠 InmobiliariasLima</div>
+      <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Casas</a></li>
+          <li><a href="#">Apartamentos</a></li>
+          <li><a href="#">Lotes</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="search">
+        <input type="text" placeholder="Buscar ciudad o inmueble..." />
+        <button>🔍</button>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <h1>Encuentra la propiedad ideal para ti</h1>
+      <p>
+        Explora nuestra selección de casas, apartamentos y lotes disponibles.
+      </p>
+    </section>
+
+    <!-- Catálogo -->
+    <main>
+      <h2 class="titulo-seccion">Propiedades destacadas</h2>
+      <div id="catalogo" class="grid"></div>
+    </main>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span id="closeModal" class="close">&times;</span>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 InmobiliariasLima - Todos los derechos reservados</p>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
